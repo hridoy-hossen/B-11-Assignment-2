@@ -346,19 +346,22 @@
     top: -20px; */
   }
   .footer-container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 100px; */
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
     
   }
   .education{
-    /* max-width: 400px; */
+    max-width: 400px;
     
   }
   .box-holder{
     display: flex;
     align-items: center;
-    max-height: 100px;
+    max-height: 120px;
   }
   .box{
     max-width: 90px;
@@ -393,6 +396,9 @@
     list-style: none;
     margin-bottom: 20px;
     
+  }
+  .keep-touch{
+    justify-self: flex-end;
   }
   .keep-touch h1{
     font-size: 1.9rem;
@@ -475,7 +481,7 @@
    }
    .our-stories{
     margin: 0;
-    padding: 50px;
+    /* padding: 50px; */
    }
     .stories{
       grid-template-columns: repeat(2, 1fr);
@@ -491,7 +497,10 @@
     padding: 0px;
   }
   .footer-container{
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
   }
     
    }
