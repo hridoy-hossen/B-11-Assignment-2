@@ -36,8 +36,11 @@
   .aqua-blue-bg{
     background-color: #05D4DF;
   }
-  .blue-lotus-bg{
+  #blue-lotus-bg{
     background-color: #5D58EF;
+  }
+  .gray{
+    color: #666666;
   }
   /* Buttons */
   .primary-btn{
@@ -51,18 +54,37 @@
   }
   
   /* margins */
+  main , footer{
+    margin-bottom: 0px;
+
+  }
   section{
     margin-bottom: 20px;
   }
   /* Sheared Style */
 
-  header, main {
+  header, .center{
     margin: 20px 140px;
+  }
+  .bg-section{
+    background-image: url("../assets/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+  .gradient{
+    background: linear-gradient(to top, #FEB, white);
   }
   /* Style navigation bar */
   .navbar-container{
     display: flex;
     gap: 180px;
+  }
+  .menu-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .logo {
     gap: 8px;
@@ -74,8 +96,13 @@
     font-weight: 600;
     margin: 0;
   }
-  .logo img{
+  .logo-img{
     height: 62px;
+    width: 62px;
+  }
+  .logo-img img{
+    width: 100%;
+    height: 100%;
   }
   
 
@@ -102,6 +129,9 @@
     border-radius: 10px;
     color: white;
   }
+  #toggol{
+    display: none;
+  }
   /* navigation bar */
   /* Banner */
   .banner-container{
@@ -115,16 +145,14 @@
     margin-bottom: 20px;
   }
   .banner-dis{
-    font-size:20px;
+    font-size:1.4px;
     margin-bottom: 24px;
   }
   /* Main part of page/
   Standard curriculum Section*/
   .curriculum{
-    background-image: url("../assets/bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+   
   }
 
   .curriculum h1{
@@ -141,6 +169,7 @@
   .card{
     background: linear-gradient(to bottom , #DEF5FF, white, white, white );
     max-height: 480px;
+    
     padding: 40px;
     border: none;
     border-radius: 18px;
@@ -207,3 +236,207 @@
     font-weight: 800;
     color: white;
   }
+/* our-stories */
+  .our-stories{
+   padding-bottom: 140px;
+  }
+  .our-stories h1{
+    position: relative;
+    top: 60px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .main-story , .story-2, .story-3, .story-4, .story-5{
+    background-color:white;
+    border-radius: 16px;
+
+  }
+
+
+ 
+
+   .stories{
+    display: grid;
+    grid-template-columns: 540px repeat(2, 1fr);
+    gap: 20px;
+    border-radius: 16px;
+    position: relative;
+    top:40px;
+  }
+  .main-story{
+    grid-row: 1/3;
+  }
+  .main-story, .story-2 ,.story-3 ,.story-4,  img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+  }
+  .main-story, .story-2 ,.story-3 ,.story-4,.story-5{
+    position: relative;
+  }
+  .main-story h2{
+    font-size: 1.6rem;
+    line-height: 45px;
+    padding: 38px;
+    margin: 0;
+  }
+  .main-story p{
+    padding: 38px;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  .btn-holder{
+    margin-top: -30px;
+    margin-left: 38px;
+    max-width: 200px;
+  }
+  .secondary-btn-holder{
+    margin-top: -25px;
+    padding-left: 37px;
+  }
+  .story-title{
+    padding-left:37px ;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .story-btn{
+    padding: 14px 19px;
+    /* position:absolute;
+    top: 46.5%;
+    left: 2%; */
+  
+    border-radius: 47px;
+    border: none;
+    background-color: #05D4DF;
+    color: white;
+  }
+  .btn-2{
+    background-color: #95B226;
+    
+  }
+  .btn-3{
+    top: 57%;
+  }
+
+  .view-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  /* Style Footer */
+  footer{
+    padding: 123px 230px 174px 140px;
+    background-color: #01ACFD;
+    color: white;
+    /* position: relative;
+    top: -20px; */
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    
+  }
+  .education{
+    max-width: 400px;
+  }
+  .box-holder{
+    display: flex;
+    align-items: center;
+    max-height: 100px;
+  }
+  .box{
+    max-width: 90px;
+    max-height: 80px;
+    align-self: flex-start;
+    
+  }
+  .box .education-logo{
+    width: 100%;
+    height: 80px;
+    text-align: start;
+  }
+  .education-title{
+   font-size: 2.3rem;
+  }
+  .education-dis{
+    padding-left: 2.3%;
+  }
+
+  .footer-menu .about-school{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .footer-menu .menus li{
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .keep-touch h1{
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .logos{
+    display: flex;
+    gap: 10px;
+  }
+  .logos img{
+    max-width: 40px;
+    border-radius: 0px;
+    color: white;
+  }
+  /* make responsive */
+  @media screen and (max-width:570px){
+    header{
+      margin:0;
+    }
+    .navbar-container{
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 2px solid #FEA301;
+      padding-bottom: 10px;
+    }
+   .logo{
+    justify-content: space-between;
+   }
+    .menu-holder{
+    display: none;
+
+   }
+   .school{
+    display: none;
+   }
+   /* .school{
+    display: none;
+   } */
+   #toggol{
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+    
+   }
+
+   .banner-container{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    
+   }
+   .side-img{
+    width: 100%;
+    grid-column: 2/1;
+   }
+   .side-img img{
+    width: 100%;
+   }
+   .card-holder{
+    grid-template-columns: repeat(1 , 1fr);
+   }
+  
+  } 
